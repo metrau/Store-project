@@ -1,0 +1,415 @@
+@font-face {
+    font-family: 'IRANSansXFaNum';
+    src: url('../Fonts/IRANSansXFaNum.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+body {
+    direction: rtl;
+    font-family: IRANSansXFaNum;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    margin-right: 40px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.red_bar {
+    background-color: #ED164B;
+    border-radius:20px;
+    /* برای گرد کردن گوشه های مربع و مستطیل و کلا باتن */
+    width: 65%;
+    height: 13%;
+    display: inline;
+    border:0px #ED164B;
+    padding-top: 17px;
+    font-family: IRANSansXFaNum;
+    position: relative;
+    right: 230px;
+    bottom: 16px;
+    cursor: url("../Image/cursor.png"),pointer;
+  /* display: block;
+    margin: 0px auto; 
+    برای وسط آوردن باتن */
+}
+.red_bar_text1  {
+    color: #FFFFFF;
+    font-size: 12px;
+    width: 66px;
+    height: 15px;
+    position: relative;
+    bottom: 3px;
+}
+.red_bar_text1n {
+    color: #FFFFFF;
+    width: 112px;
+    height: 15px;
+    font-size: 15px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 2px;
+}
+.text_one {
+    color: #FF0000;
+    width: 35%;
+    height:20%;
+    font-size: 32px;
+    margin-right:27px;
+    position: relative;
+    bottom: 40px;
+}  
+.search {
+    width: 45%;
+    height: 40px;
+}
+.search_bar {
+    width: 100%;
+    height: 100%;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    border: 0px #E0E0E0;
+    font-family: IRANSansXFaNum;
+    position: relative;
+    bottom: 105px;
+    right: 340px;
+    cursor: url("../Image/cursor.png"),pointer;
+    display: flex;
+}
+.search_bar_text {
+    background-color: #E0E0E0;
+    border: none;
+    padding-right: 20px;
+    width: 380px;
+    height: 90%;
+    cursor: url("../Image/cursor.png"),pointer;
+    font-family: IRANSansXFaNum;    
+}
+.search_bar_text :hover {
+    border: none;
+}
+.search-icon {
+    top: 8px;
+    z-index: 1;
+    position: relative;
+    right: 78px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.submit-icon {
+    width: 25px;
+    z-index: 0;
+    position: relative;
+    right: 103px;
+    background-color:#E0E0E0 ;
+    border: none;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.buy {
+    border:0px #00244d;
+    background-color: #00244d;
+    width: 10%;
+    height: 34px;
+    border-radius: 5px;
+    margin-right: 950px;
+    position: relative;
+    bottom: 145px;
+    font-family: IRANSansXFaNum;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.buy_icon {
+    color: #FFFFFF;
+    margin: -25px 15px 0px 0px;
+    position: relative;
+    font-size: 14px;
+    bottom: 3px;
+    left: 3px;
+}
+.login {
+    background-color: #001732;
+    border:0px #001732;
+    width: 10%;
+    height: 34px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 180px;
+    font-family: IRANSansXFaNum;
+    margin-right: 1100px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.login_icon {
+    color: #FFFFFF;
+    margin-top: -25px;
+    position: relative;
+    bottom: 3px;
+}
+.first_menu {
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+li {
+    display: inline-block;
+    font-size: 14px;
+    padding-inline-start: 35px;
+    color: #000000;
+    bottom: 50px;
+    position: relative;
+    /* text-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.25); */
+}
+.categories-icon {
+    padding-right: 35px;
+    position: relative;
+    bottom: 47px;
+}
+.first_ul , .second_ul{
+    padding-right: unset;
+    padding-left: 20px;
+}
+.vertical {
+    position: relative;
+    bottom: 40px;
+}
+.small_vector {
+    position: relative;
+    bottom: 53px;
+    /* برای تغییر موقعیت یک عنصر نسبت به موقعیت اولیه خودش بدون تاثیر روی المانهای مجاور */
+}
+@keyframes LineAnimation {
+    from {
+        background: white;
+        width: 1%;
+    }
+    to {
+        background: #ED164B;
+        width: 80%;
+    }
+}
+.Line {
+    width: 60%;
+    height: 10px;
+    animation: LineAnimation 5s infinite 0.1s;
+    position: relative;
+    right: 25px;
+    bottom: 75px;
+}
+.berands_page_two {
+ position: relative;
+ bottom: 120px;
+}
+.berands_underline {
+    right: 20px;
+    position: relative;
+}
+.berands_underline_text {
+    font-size: 18px;
+    color: rgba(1, 48, 102, 1);
+    font-family: IRANSansXFaNum;
+    margin-right: 30px;
+}
+.style_buttons_for_pricelist{
+    width: 260px;
+    height: 109px;
+    background-color:rgba(238, 238, 238, 1);
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
+    gap: 20px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.buttons_for_pricelist {
+    flex-wrap: wrap;
+    flex:0 , 0,  25% - 20px;
+    display: block;
+    margin-right: 7px;
+}
+.list_qeymat {
+    position: relative;
+    font-size: 12px;
+    font-family: IRANSansXFaNum;
+    bottom: 30px;
+    right: 10px;
+}
+.LS_ELECTRIC {
+    position: relative;
+    font-size: 18.5px;
+    font-family: IRANSansXFaNum;
+    top: 10px;
+    left: 20px;
+}
+.line_price_right {
+    position: relative;
+    right: 11px;
+    bottom: 60px;
+}
+.line_price_left {
+    position: relative;
+    left: 11px;
+    bottom: 60px;
+}
+.line_price_right_new {
+    position: relative;
+    right: 11px;
+    bottom: 61px;
+}
+.background_end_pages {
+    margin-right: 100px;
+    background-image:url(../Image/background_for_pages.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    
+}
+.for_end_pages {
+    display: flex;
+    height: 20%;
+    width: 90%;
+    position: relative;
+    left: 120px;    
+}
+.first_end_pages {
+    display: block;
+    width: 435px;
+    height: 250px;
+    margin-top: 110px;
+}
+.call_icon_animation {
+    position: relative;
+    top: 7px;
+}
+.call_us{
+    color:rgba(1, 48, 102, 1);
+    font-size: 20px;
+    font-family: IRANSansXFaNum;
+    position: relative;
+}
+.location_icon_end_pages {
+    position: relative;
+    left: 27px;
+    border: rgba(1, 48, 102, 1);
+    top: 5px;
+}
+.circle_location_end_page {
+    position: relative;
+    top: 10px;
+
+}
+.locatio_end_pages_text {
+    position: relative;
+    left: 17px;
+    color: rgba(1, 48, 102, 1);
+    font-family: IRANSansXFaNum;
+    top: 2px;
+}
+.locatio_end_pages_text_two {
+    color: rgba(1, 48, 102, 1);
+    font-family: IRANSansXFaNum;
+    top: 2px;
+    position: relative;
+}
+.call_icon_end_apges {
+    position: relative;
+    left: 297px;
+    top: 45px;
+}
+.circle_call_end_page {
+    position: relative;
+    left: 270px;
+    top: 49px;
+}
+.call_end_pages_text_first {
+    position: relative;
+    left: 290px;
+    color: rgba(1, 48, 102, 1);
+    font-family: IRANSansXFaNum;
+    top: 45px;
+
+}
+.call_end_pages_text_second {
+    position: relative;
+    top: 43px;
+    right: 10px;
+    color: rgba(1, 48, 102, 1);
+    font-family: IRANSansXFaNum;
+
+}
+.circle_email_end_page {
+    position: relative;
+    left: 290px;
+    top: 95px;
+}
+.email_icon_end_apges {
+    position: relative;
+    left: 317px;
+    top: 92px;
+
+}
+.email_end_pages_text_first {
+    position: relative;
+    color: rgba(1, 48, 102, 1);
+    font-family: IRANSansXFaNum;
+    left: 315px;
+    top: 88px;
+}
+.email_end_pages_text_second {
+    position: relative;
+    color: rgba(1, 48, 102, 1);
+    font-family: IRANSansXFaNum;
+    right: 90px;
+    top: 70px;
+}
+.second_end_pages {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin-right: 5px;
+    margin-top: 130px;
+}
+.link_karbordi {
+    font-size: 20px;
+    position: relative;
+    color: rgba(1, 48, 102, 1);
+    font-family: IRANSansXFaNum;
+}
+.for_column_second_end_pages {
+    width: 114px;
+    height: 200px;
+
+}
+.for_column_second_end_pages_one{
+    background-color: rgba(237, 22, 75, 1);
+    border-radius: 1000px;
+    margin-top: 10px;
+    border: none;
+    height: 30px;
+}
+.for_column_second_end_pages_text {
+    font-size: 11px;
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+    font-family: IRANSansXFaNum;
+
+}
+.third_end_pages {
+    width: 150px;
+    height: 250px;
+    margin-top: 130px;
+    display: block;
+    margin-right: 5px;
+}
+.list_gheymat {
+    font-size: 19px;
+    color: rgba(1, 48, 102, 1);
+    font-family: IRANSansXFaNum;
+}
+.third_end_pages_button {
+    background-color: rgba(237, 22, 75, 1);
+    border-radius: 1000px;
+    margin-top: 15px;
+    border: none;
+    height: 30px;
+    width: 73px;
+}

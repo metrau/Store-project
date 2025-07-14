@@ -1,0 +1,739 @@
+@font-face {
+     font-family: 'IRANSansXFaNum';
+     src: url('../Fonts/IRANSansXFaNum.woff') format("woff");
+     font-weight: normal;
+     font-style: normal;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    max-height: 1220px;
+}
+body {
+    direction: rtl;
+    font-family: IRANSansXFaNum;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.red_bar {
+    background-color: #ED164B;
+    border-radius:20px;
+    /* برای گرد کردن گوشه های مربع و مستطیل و کلا باتن */
+    width: 65%;
+    height: 13%;
+    display: inline;
+    border:0px #ED164B;
+    padding-top: 17px;
+    font-family: IRANSansXFaNum;
+    position: relative;
+    right: 230px;
+    bottom: 16px;
+    cursor: url("../Image/cursor.png"),pointer;
+  /* display: block;
+    margin: 0px auto; 
+    برای وسط آوردن باتن */
+}
+.red_bar_text1  {
+    color: #FFFFFF;
+    font-size: 12px;
+    width: 66px;
+    height: 15px;
+    position: relative;
+    bottom: 3px;
+}
+.red_bar_text1n {
+    color: #FFFFFF;
+    width: 112px;
+    height: 15px;
+    font-size: 15px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 2px;
+    
+}
+.text_one {
+    color: #FF0000;
+    width: 35%;
+    height:20%;
+    font-size: 32px;
+    margin-right:27px;
+    position: relative;
+    bottom: 40px;
+}  
+.search {
+    width: 45%;
+    height: 40px;
+}
+.search_bar {
+    width: 100%;
+    height: 100%;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    border: 0px #E0E0E0;
+    font-family: IRANSansXFaNum;
+    position: relative;
+    bottom: 105px;
+    right: 340px;
+    cursor: url("../Image/cursor.png"),pointer;
+    display: flex;
+}
+.search_bar_text {
+    background-color: #E0E0E0;
+    border: none;
+    padding-right: 20px;
+    width: 380px;
+    height: 90%;
+    cursor: url("../Image/cursor.png"),pointer;
+    font-family: IRANSansXFaNum;
+}
+.search_bar_text :hover {
+    border: none;
+}
+.search-icon {
+    top: 8px;
+    z-index: 1;
+    position: relative;
+    right: 78px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.submit-icon {
+    width: 25px;
+    z-index: 0;
+    position: relative;
+    right: 103px;
+    background-color:#E0E0E0 ;
+    border: none;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.buy {
+    border:0px #00244d;
+    background-color: #00244d;
+    width: 10%;
+    height: 34px;
+    border-radius: 5px;
+    margin-right: 950px;
+    position: relative;
+    bottom: 145px;
+    font-family: IRANSansXFaNum;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.buy_icon {
+    color: #FFFFFF;
+    margin: -25px 15px 0px 0px;
+    position: relative;
+    font-size: 14px;
+    bottom: 3px;
+    left: 3px;
+}
+.login {
+    background-color: #001732;
+    border:0px #001732;
+    width: 10%;
+    height: 34px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 180px;
+    font-family: IRANSansXFaNum;
+    margin-right: 1100px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.login_icon {
+    color: #FFFFFF;
+    margin-top: -25px;
+    position: relative;
+    bottom: 3px;
+}
+.first_menu {
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+li {
+    display: inline-block;
+    font-size: 14px;
+    padding-inline-start: 35px;
+    color: #000000;
+    bottom: 50px;
+    position: relative;
+    /* text-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.categories-icon {
+    padding-right: 35px;
+    position: relative;
+    bottom: 47px;
+}
+.first_ul , .second_ul{
+    padding-right: unset;
+    padding-left: 20px;
+}
+.vertical {
+    position: relative;
+    bottom: 40px;
+}
+.small_vector {
+    position: relative;
+    bottom: 53px;
+    /* برای تغییر موقعیت یک عنصر نسبت به موقعیت اولیه خودش بدون تاثیر روی المانهای مجاور */
+}
+@keyframes LineAnimation {
+    from {
+        background: white;
+        width: 1%;
+    }
+    to {
+        background: #ED164B;
+        width: 80%;
+    }
+}
+.Line {
+    width: 60%;
+    height: 10px;
+    animation: LineAnimation 5s infinite 0.1s;
+    position: relative;
+    right: 25px;
+    bottom: 75px;
+}
+.all_page_one {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    position: relative;
+    bottom: 120px;
+    right: 20px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.div_user {
+    width: 400px;
+    height: 800px;
+    display: block;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.user {
+    width: 350px;
+    height: 120px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    border: none;
+    cursor: url("../Image/cursor.png"),pointer;
+
+}
+.user_icon {
+    position: relative;
+    top: 7px;
+    border-radius: 50px;
+    border: 2px solid rgba(237, 22, 75, 1);
+    transition:width 0.7s , height 0.7s , border 0.7s;
+}
+.user_icon:hover {
+    width: 20%;
+    height: 55%;
+    border:5px solid rgba(237, 22, 75, 1);
+}
+.user_text_name {
+    position: relative;
+    bottom: 40px;
+    right: 6px;
+    font-size: 13px;
+    font-family: IRANSansXFaNum;
+    color: #000000;
+    width: 150px;
+    height: 16px;
+}
+.user_text_number {
+    position: relative;
+    transform: translate(0,0);
+    bottom: 10px;
+    right: 30px;
+    color: #525252;
+    font-family: IRANSansXFaNum;
+    font-size: 10px;
+    text-decoration: underline;
+}
+.addresses_btn{
+    height: 40px;
+    background-color: white;
+    border:none;
+    margin-top: 20px;
+    display: flex;
+    font-family: IRANSansXFaNum;
+    margin-right: 17px;
+    font-size: 14px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.addresses_btn_text {
+    color:rgba(1, 48, 102, 0.29);
+    margin-right: 10px;
+    margin-top: 2px;
+    position: relative;
+    top: 3px;
+}
+.addresses_btn_img {
+    position: relative;
+    top: 3px;
+}
+.addresses_btn:hover {
+    background-color: rgba(255, 142, 142, 0.21);
+    width: 180px;
+    height: 43px;
+    font-size: 16px;
+    border-radius: 5px;
+    .addresses_btn_text {
+        color: rgba(237, 22, 75, 1);
+    }
+    .addresses_btn_img {
+        width: 23px;
+        height: 23px;
+        position: relative;
+        top: 5px; 
+    }
+}
+.rocket_gif {
+    position: relative;
+    animation: rocket 7s infinite 0.3s linear;
+}
+@keyframes rocket {
+    from {
+        top: 450px;
+        right: 240px;
+
+    }
+    to {
+        right: 30px;
+        top: 10px;
+    }
+}
+.page_one {
+    background-color: #F2F2F2;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    margin-inline-start: 8px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.top_line {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 97%;
+    height: 150px;
+    margin: 13px 13px 0px 20px;
+    border-radius: 5px;
+    cursor: url("../Image/cursor.png"),pointer;
+
+}
+.first_top_line {
+    width: 40%;
+    border-radius: 13px;
+    background-color:#EC164B ;
+    border: none;
+    display:flex;
+    margin: 33px 15px 33px 15px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.first_top_line_text {
+    font-size: 10px;
+    color:white;
+    position: relative;
+    top: 35px;
+    margin-right: 5px;
+    left: 40px;
+    font-family: IRANSansXFaNum;
+}
+.first_top_line_number {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 45px;
+    font-family: IRANSansXFaNum;
+}
+.first_top_line_image {
+    position: relative;
+    right: 185px;
+    top: 5px;
+}
+.first_top_line_image:hover {
+    transform: scale(1.5);
+    position: relative;
+    right: 170px;
+}
+.second_top_line {
+    width: 40%;
+    border-radius: 13px;
+    background-color: #EF5E7A;
+    border: none;
+    display: flex;
+    margin: 33px 15px 33px 15px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.second_top_line_text {
+    font-size: 10px;
+    color:white;
+    position: relative;
+    top: 35px;
+    margin-right: 5px;
+    left: 55px;
+    font-family: IRANSansXFaNum;
+
+}
+.second_top_line_number {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 57px;
+    font-family: IRANSansXFaNum;
+}
+.second_top_line_image {
+    position: relative;
+    right: 170px;
+    top: 10px;
+}
+.second_top_line_image:hover {
+    transform: scale(1.5);
+    position: relative;
+    right: 150px;
+}
+
+.third_top_line {
+    width: 40%;
+    background-color: #305FEC;
+    border: none;
+    border-radius: 13px;
+    display: flex;
+    margin: 33px 15px 33px 15px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.third_top_line_text {
+    font-size: 10px;
+    color:white;
+    position: relative;
+    top: 35px;
+    left: 55px;
+    font-family: IRANSansXFaNum;
+
+}
+.third_top_line_number {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 60px;
+    font-family: IRANSansXFaNum;
+}
+.third_top_line_image {
+    position: relative;
+    right: 160px;
+    top: 17px;
+}
+.third_top_line_image:hover {
+    transform: scale(1.5);
+    position: relative;
+    right: 140px;
+}
+.show_for_page_one {
+    width: 97%;
+    height: 64px;
+    border-radius: 5px;
+    background: #ED164B;
+    display: block;
+    margin-top: 15px;
+    margin-right: 13px;
+    border:none;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.first_show_for_page_one {
+    font-size: 15px;
+    color: white;
+    display: block;
+    position: relative;
+    right: -370px;
+    font-family: IRANSansXFaNum;
+    bottom: 3px;
+}
+.second_show_for_page_one {
+    font-size: 9.3px;
+    color: white;
+    font-family: IRANSansXFaNum;
+} 
+.end_page_one {
+    display: flex;
+    width: 63%;
+    height: 750px;
+    margin-right: 10px; 
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.right_end_page_one {
+    display: block;
+    width: 900px;
+    height: 100%;
+}
+.first_right_end_page_one {
+    width: 550px;
+    height: 320px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.second_right_end_page_one{
+    background-color: white;
+    width: 550px;
+    height: 350px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.new_sefaresh , .new_bazdid {
+    font-family: IRANSansXFaNum;
+    color: black;
+    top: 25px;
+    position: relative;
+    right: 15px;
+    font-size: 16px;
+}
+.see_all {
+    font-family: IRANSansXFaNum;
+    color: rgba(237, 22, 75, 1);
+    position: relative;
+    top: 25px;
+    right: 270px;
+    font-size: 11px;
+}
+.see_all_img {
+    font-family: IRANSansXFaNum;
+    color: rgba(237, 22, 75, 1);
+    position: relative;
+    top: 30px;
+    right: 265px;
+    font-size: 11px;
+
+}
+.first_new_sefaresh {
+    position: relative;
+    top: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 5px;
+    right: 13px;
+    margin-top: 10px;
+    display: flex;
+    height: 100px;
+    width: 500px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.code_sefaresh {
+    color: rgba(159, 159, 159, 1);
+    font-size: 10px;
+    position: relative;
+    font-family: IRANSansXFaNum;
+    right: 10px;
+    width: 10px;
+    top: 13px;
+}
+.number_sefaresh {
+    font-family: IRANSansXFaNum;
+    right: 55px;
+    top: 12px;
+    position: relative;
+    color: rgba(28, 28, 28, 1);
+    font-size: 12px;
+}
+.price_sefaresh {
+    position: relative;
+    right: 280px;
+    font-size: 12px;
+    top: 13px;
+    color: rgba(0, 0, 0, 1);
+    font-family: IRANSansXFaNum;
+    
+}
+.img_sefaresh {
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+    margin: 7px;
+    position: relative;
+    top: 32px;
+    left: 200px;
+
+}
+.line_sefaresh {
+    top: 37px;
+    left: 200px;
+    position: relative;
+}
+.door_sefaresh {
+    position: relative;
+    top: 50px;
+    left: 5px;
+}
+.number_one_second_right_page_one {
+    width:170px;
+    height: 250px;
+    background-color: rgba(239, 239, 239, 1);
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    top: 50px;
+    right: 10px;
+    margin-left: 10px;
+
+}
+.number_one_second_right_page_one_img {
+    width: 150px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    border-radius: 8px;
+    border: none;
+    top: 10px;
+    right: 10px;
+}
+.number_one_second_right_page_one_pink {
+    background-color: rgba(237, 22, 75, 1);
+    width: 37px;
+    height: 20px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 20px;
+    right: 115px;
+    border: none;
+}
+.for_display_buttons {
+    display: flex;
+}
+.darsad {
+    color: white;
+    font-size: 10px;
+    font-family: IRANSansXFaNum;
+}
+.model_mahsol_right {
+
+    color: rgba(86, 86, 86, 1);
+    font-size: 10px;
+    position: relative;
+    top: 5px;
+    display: inline;
+    left: 30px;
+}
+.name_mahsol_right {
+    font-size: 12px;
+    font-family: IRANSansXFaNum;
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+    top: 30px;
+    left: 90px;
+
+}
+.tozihat_mahsol{
+    font-size: 10px;
+    font-family: IRANSansXFaNum;
+    color: rgba(1, 48, 102, 1);
+    position: relative;
+    right: 5px;
+    top: 40px;
+}
+.price_mahsol_right {
+    font-size: 13px;
+    font-family: IRANSansXFaNum;
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+    top: 50px;
+    right: 50px;
+} 
+.new_Product {
+    width: 270px;
+    height: 680px;
+    background-color: white;
+    margin-top: 30px;
+    margin-right: 5px;
+    display: block;
+    border-radius: 5px;
+}
+.text_new_product {
+    font-family: IRANSansXFaNum;
+    margin-right: 10px ;
+    top: 5px;
+    position: relative;
+    font-size: 18px;
+}
+.new_Product_one {
+    margin-top: 30px;
+    width: 260px;
+    height: 93px;
+    margin-right: 10px;
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.25);
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.model_mahsol {
+    font-size: 11px;
+    font-family: IRANSansXFaNum;
+    color: rgba(156, 156, 156, 1);
+    bottom: 45px;
+    right: 5px;
+    position: relative;
+}
+.name_mahsol {
+    font-family: IRANSansXFaNum;
+    font-size: 14px;
+    color: rgba(56, 56, 56, 1);
+    position: relative;
+    bottom: 15px;
+}
+.new_Product_img {
+    position: relative;
+    top: 10px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 5px;
+    border: none;
+    width: 70px;
+    height: 70px;
+    left: 8px;
+    
+}
+.right_product {
+    position: relative;
+    right: 60px;
+    top: 14px;
+}
+.left_product {
+    position: relative;
+    top: 13px;
+    left: -65px;
+}
+.number_mahsol {
+    position: relative;
+    right: 56px;
+    bottom: 5px;
+    font-family: IRANSansXFaNum;
+}
+
+    
+
+
+/* .list1 { 
+    background-color: blue;
+ } */
+ /* for style special part 
+ go to select file*/
+ /*nav ul li{
+ background_color=blue;
+ } */
+
+ /* for style many things
+ div , a , class{
+ background_color = yellow;
+ } */
+
+ 

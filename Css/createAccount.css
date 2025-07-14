@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'IRANSansXFaNum';
+    src: url('../Fonts/IRANSansXFaNum.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+   max-width: 1200px;
+   margin: auto;
+   max-height: 1220px;
+}
+body {
+   direction: rtl;
+   font-family: IRANSansXFaNum;
+   width: 80%;
+   height: 100%;
+   overflow-x: hidden;
+   display: flex;
+   cursor: url("../Image/cursor.png"),pointer;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.radio_create {
+    cursor: url("../Image/cursor.png"),pointer;
+    font-family: IRANSansXFaNum;
+}
+.novin {
+    align-self: center;
+    font-family: IRANSansXFaNum;
+}
+.text_font {
+    font-family: IRANSansXFaNum;
+}
+.input_and_phone {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: url("../Image/cursor.png"),pointer;
+}
+.input_create {
+    border: 0px;
+    margin-top: 20px;
+    width:280px;
+    direction: rtl;
+    margin-right: 10px;
+    border-bottom: 2px solid rgba(237, 22, 75, 1);
+    font-family: IRANSansXFaNum;
+    font-size: 15px;
+}
+.phone_icon {
+    margin-top: 20px;
+}
+.submit_create , .submit_login {
+    width: 316px;
+    height: 36px;
+    background-color: rgba(237, 22, 75, 1);
+    border-radius: 10px;
+    border: 0px;
+    margin-top: 20px;
+    font-family: IRANSansXFaNum;
+    font-size: 20px;
+    cursor: url("../Image/cursor.png"),pointer;
+    color: white;
+    position: absolute;
+}
+@media(min-width: 769px){
+    body {
+        background-image:url("../Image/backgroung-create.svg");
+        background-size:cover ;
+        justify-content: center;
+    }
+    .enter_information {
+        width: 400px;
+        height: 400px;
+        font-family: IRANSansXFaNum;
+        border: 5px solid rgba(255, 142, 142, 1);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        cursor: url("../Image/cursor.png"),pointer;
+        background-color: rgba(255, 255, 255, 1);
+        padding-bottom: 50px;
+        padding-right: 20px;
+        margin: 150px 130px 0px 0px;
+        justify-content: center;
+        position: relative;
+    }
+    .img_factory_mobile {
+        visibility: hidden;
+        position: absolute;
+    }
+    .enter_information_create {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width: 769px){
+    body {
+        background-color: rgba(237, 22, 75, 1); 
+        background-image: none;
+        display: grid;
+        position: absolute;
+        text-align: center;
+    }
+    .enter_information {
+        background-color:rgba(255, 255, 255, 1) ;
+        width: 125%;
+        height: 90%;
+        border-radius: 70px;
+        margin-top: 100px;
+    }
+    .novin {
+        visibility: hidden;
+    }
+    .img_factory_mobile {
+        width: 300px;
+        height: 300px;
+        top: 30px;
+        position: relative;
+        visibility: visible;
+        justify-content: center;
+    }
+    .enter_information_create {
+        align-items: center;
+        display: grid;
+    }
+    .input_create {
+        align-self:center ;
+        padding: 10px;
+        border: 2px solid  rgba(237, 22, 75, 1);
+        border-radius: 15px;
+    }
+    .input_and_phone {
+        justify-content: center;
+    }
+    .submit_create , .submit_login {
+        justify-self: center;
+    }
+    .center_button_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
